@@ -15,7 +15,7 @@ class UserProfileInfo(models.Model):
     user = models.OneToOneField(User)
 
     portfolio_site = models.URLField(blank=True)
-    profile_pic = model.ImageField(upload_to='profilepics', blank = True)
+    profile_pic = models.ImageField(upload_to='profilepics', blank = True)
 
 
     def __str__(self):
